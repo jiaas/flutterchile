@@ -15,6 +15,13 @@ import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Layout, { GradientBackground } from '../../components/Layout';
 import SEO from '../../components/SEO';
+import { Avatar, Box, AvatarGroup, Card, Chip, Divider, IconButton, Stack, Switch, Typography } from '@mui/material';
+import { Edit, LocationOn } from '@mui/icons-material';
+
+
+
+
+
 
 // Custom components/renderers to pass to MDX.
 // Since the MDX files aren't loaded by webpack, they have no knowledge of how
@@ -47,6 +54,19 @@ export default function PostPage({
           <h1 className="text-3xl md:text-5xl dark:text-white text-center mb-12">
             {frontMatter.title}
           </h1>
+          <Box sx={{ height: 10, opacity: 0 }} />
+          <Stack
+            direction="row-reverse"
+            spacing={1}
+          >
+            <Box sx={{ width: 30, opacity: 0 }} />
+            <Typography fontWeight={700}>Javier Ignacio y ChatGPT.</Typography>
+            <Typography fontWeight={100}>Escrito por</Typography>
+          </Stack>
+          <Divider></Divider>
+
+          <Box sx={{ height: 30, opacity: 0 }} />
+
           {frontMatter.description && (
             <p className="text-xl mb-4">{frontMatter.description}</p>
           )}
@@ -94,7 +114,7 @@ export default function PostPage({
         variant="small"
         className="absolute bottom-0 opacity-20 dark:opacity-10"
       />
-    </Layout>
+    </Layout >
   );
 }
 

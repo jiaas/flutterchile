@@ -1,7 +1,45 @@
 ---
-title: Design critiques at Figma
-description: "Consider that for a moment: everything we see around us is assumed to have had a cause and is contingent upon."
-date: Jan 2 2021
+title: "Los secretos detrás de este blog: Cómo usé NextJS, Markdown y Netlify para crear un sitio web dinámico y fácil de actualizar."
+description: "Descubre cómo usé NextJS, Contentful y Vercel para crear este blog dinámico, rápido y seguro. De forma totalmente gratuita."
+date: 1 de Mayo, 2023
 ---
 
-This is an example post. There's another one [here](/posts/example-post).
+En este artículo les voy a contar los secretos detrás de este blog: cómo usé NextJS, Contentful y Vercel para crear un sitio web dinámico y fácil de actualizar. Estas son tres herramientas que me han facilitado mucho la vida como desarrollador web, y que creo que pueden ser útiles para muchos de ustedes.
+Lo mejor de todo es que pude tener listo este blog en solo unos días, gracias al sistema de deploy a través de pipelines CI/CD de Vercel. Así es, no tuve que configurar nada ni preocuparme por el hosting, el SEO o el rendimiento. Todo se hizo automáticamente y sin complicaciones. ¿Quieres saber cómo lo hice? ¡Sigue leyendo!
+NextJS
+NextJS es un framework basado en React que permite crear sitios web estáticos o dinámicos con una excelente experiencia de desarrollo y rendimiento. Con NextJS puedes aprovechar las ventajas de React, como el uso de componentes, el manejo del estado y el enrutamiento, pero también puedes generar páginas estáticas al momento de construir el sitio, lo que mejora la velocidad de carga y el SEO. Además, NextJS tiene integración con muchas fuentes de datos, como APIs, bases de datos o servicios de CMS.
+Algunas características de NextJS son:
+Renderizado híbrido
+: puedes elegir entre renderizar las páginas en el servidor o en el cliente, según las necesidades de cada una.
+Generación estática incremental
+: puedes generar páginas estáticas al momento del despliegue o al momento de la solicitud, lo que te permite tener un sitio web siempre actualizado sin sacrificar el rendimiento.
+Image Component
+: puedes optimizar el tamaño y la calidad de las imágenes que usas en tu sitio web con un solo componente, que se encarga de cargarlas bajo demanda y adaptarlas a cada dispositivo.
+API Routes
+: puedes crear funciones serverless dentro de tu proyecto NextJS, que se ejecutan al hacer una solicitud a una ruta específica. Estas funciones pueden acceder a los datos que necesites y devolver una respuesta JSON o HTML.
+
+Contentful
+Contentful es uno de esos servicios de CMS que se integra perfectamente con NextJS. Contentful es un CMS sin cabeza, lo que significa que no tiene una interfaz propia para mostrar el contenido, sino que solo se encarga de almacenarlo y proveerlo mediante una API. De esta forma, puedes usar Contentful para crear y editar el contenido de tu sitio web, sin tener que preocuparte por el diseño o la programación. Contentful te permite definir tus propios modelos de contenido, con campos personalizados y validaciones. También te ofrece un sistema de versiones, una interfaz amigable y una documentación completa.
+Algunas ventajas de usar Contentful son:
+Flexibilidad
+: puedes crear cualquier tipo de contenido que necesites para tu sitio web, desde artículos hasta productos o eventos. Puedes definir los campos que quieras para cada tipo de contenido y validarlos según tus reglas.
+Escalabilidad
+: puedes manejar grandes cantidades de contenido sin problemas de rendimiento o seguridad. Contentful se encarga de almacenar tu contenido en la nube y proveerlo mediante una API rápida y confiable.
+Colaboración
+: puedes trabajar en equipo con otros editores o desarrolladores en tu proyecto. Contentful te permite asignar roles y permisos a cada usuario y ver el historial
+Colaboración
+: puedes trabajar en equipo con otros editores o desarrolladores en tu proyecto. Contentful te permite asignar roles y permisos a cada usuario y ver el historial de cambios en cada contenido.
+
+Vercel
+Vercel es la plataforma ideal para desplegar tu sitio web creado con NextJS y Contentful. Vercel es una plataforma de hosting que se especializa en sitios web estáticos o dinámicos basados en frameworks como NextJS, Gatsby o Nuxt. Con Vercel puedes desplegar tu sitio web con un solo comando o con un clic desde tu repositorio de GitHub, GitLab o Bitbucket. Vercel te ofrece un dominio gratuito, certificados SSL, CDN global, integración con funciones serverless y muchas otras características.
+Algunos beneficios de usar Vercel son:
+Facilidad
+: puedes desplegar tu sitio web en minutos, sin tener que configurar nada. Solo necesitas conectar tu repositorio con Vercel y listo. Vercel se encarga de instalar las dependencias, construir el sitio y servirlo desde el dominio que elijas.
+Rapidez
+: puedes disfrutar de un sitio web veloz y optimizado, gracias al CDN global de Vercel que distribuye tu contenido por todo el mundo. Además, Vercel usa la generación estática incremental de NextJS para mantener tu sitio web siempre actualizado sin perder rendimiento.
+Seguridad
+: puedes tener la tranquilidad de que tu sitio web está protegido con certificados SSL automáticos y renovables. También puedes usar funciones serverless para manejar datos sensibles o lógica de negocio sin exponerlos al público.
+
+Conclusión
+Con estas tres herramientas he podido crear este blog en solo unos días, y estoy muy contento con el resultado. Me gusta poder escribir sobre temas que me interesan, como programación, desarrollo web o tecnología en general, y compartirlos con ustedes. Espero que les haya gustado este artículo y que les haya servido para conocer un poco más sobre NextJS, Contentful y Vercel. Si tienen alguna duda o comentario, pueden dejarlo abajo o contactarme por correo o redes sociales. Y si quieren aprender más sobre desarrollo web, les recomiendo que se suscriban a mi newsletter, donde les enviaré consejos, recursos y novedades sobre este apasionante mundo. ¡Gracias por leerme y hasta la próxima!
+

@@ -8,10 +8,12 @@ import ArrowIcon from '../components/ArrowIcon';
 import { getGlobalData } from '../utils/global-data';
 import SEO from '../components/SEO';
 import post_1 from '../assets/post_1_img_1.png';
-import post_2 from '../assets/post_1_img_1.png';
+import post_2 from '../assets/post_2_img_1.png';
+import post_3 from '../assets/post_3_img_1.png';
+import post_4 from '../assets/post_4_img_1.png';
 import Image from 'next/image';
 
-var postImageBanner = [post_1, post_2]
+var postImageBanner = [post_1, post_2, post_3, post_4]
 
 export default function Index({ posts, globalData }) {
   return (
@@ -20,10 +22,10 @@ export default function Index({ posts, globalData }) {
       <Header name={globalData.name} />
       <main className="w-full">
 
-        {/* <h1 className="text-3xl lg:text-5xl text-center mb-12">
-          {globalData.blogTitle}
+        <h1 className="text-3xl lg:text-5xl text-center mb-12">
+          {globalData.footerText}
         </h1>
-        <h3 className="text-center mb-12">
+        {/*<h3 className="text-center mb-12">
           {globalData.footerText}
         </h3> */}
         <ul className="w-full">

@@ -7,6 +7,9 @@ import Layout, { GradientBackground } from '../components/Layout';
 import ArrowIcon from '../components/ArrowIcon';
 import { getGlobalData } from '../utils/global-data';
 import SEO from '../components/SEO';
+import logo from '../assets/logo.png';
+import post_1_img_1 from '../assets/post_1_img_1.png';
+import Image from 'next/image';
 
 export default function Index({ posts, globalData }) {
   return (
@@ -14,6 +17,7 @@ export default function Index({ posts, globalData }) {
       <SEO title={globalData.name} description={globalData.blogTitle} />
       <Header name={globalData.name} />
       <main className="w-full">
+
         <h1 className="text-3xl lg:text-5xl text-center mb-12">
           {globalData.blogTitle}
         </h1>
@@ -28,6 +32,7 @@ export default function Index({ posts, globalData }) {
                 href={`/posts/[slug]`}
               >
                 <a className="py-6 lg:py-10 px-6 lg:px-16 block focus:outline-none focus:ring-4">
+                  <Image src={post_1_img_1} width="600px" height="600px" />
                   {post.data.date && (
                     <p className="uppercase mb-3 font-bold opacity-60">
                       {post.data.date}
@@ -47,6 +52,7 @@ export default function Index({ posts, globalData }) {
         </ul>
       </main>
       <Footer copyrightText={globalData.footerText} />
+      <a href="https://storyset.com/technology">Ilustraciones by Storyset</a>
       <GradientBackground
         variant="large"
         className="fixed top-20 opacity-40 dark:opacity-60"

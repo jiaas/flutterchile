@@ -7,7 +7,6 @@ export default function Header({ name }) {
     <header className="pt-20 pb-12">
       <Link href="/">
         <a><Image src={logo} width="200px" height="200px" /></a>
-
       </Link>
     </header>
   );

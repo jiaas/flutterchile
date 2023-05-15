@@ -7,9 +7,11 @@ import Layout, { GradientBackground } from '../components/Layout';
 import ArrowIcon from '../components/ArrowIcon';
 import { getGlobalData } from '../utils/global-data';
 import SEO from '../components/SEO';
-import logo from '../assets/logo.png';
-import post_1_img_1 from '../assets/post_1_img_1.png';
+import post_1 from '../assets/post_1_img_1.png';
+import post_2 from '../assets/post_1_img_1.png';
 import Image from 'next/image';
+
+var postImageBanner = [post_1, post_2]
 
 export default function Index({ posts, globalData }) {
   return (
@@ -18,9 +20,12 @@ export default function Index({ posts, globalData }) {
       <Header name={globalData.name} />
       <main className="w-full">
 
-        <h1 className="text-3xl lg:text-5xl text-center mb-12">
+        {/* <h1 className="text-3xl lg:text-5xl text-center mb-12">
           {globalData.blogTitle}
         </h1>
+        <h3 className="text-center mb-12">
+          {globalData.footerText}
+        </h3> */}
         <ul className="w-full">
           {posts.map((post) => (
             <li
@@ -32,12 +37,14 @@ export default function Index({ posts, globalData }) {
                 href={`/posts/[slug]`}
               >
                 <a className="py-6 lg:py-10 px-6 lg:px-16 block focus:outline-none focus:ring-4">
-                  <Image src={post_1_img_1} width="600px" height="600px" />
                   {post.data.date && (
                     <p className="uppercase mb-3 font-bold opacity-60">
                       {post.data.date}
                     </p>
                   )}
+
+                  <p>{ }</p>
+                  <Image src={postImageBanner[post.data.post_id]} width="600px" height="600px" />
                   <h2 className="text-2xl md:text-3xl">{post.data.title}</h2>
                   {post.data.description && (
                     <p className="mt-3 text-lg opacity-60">

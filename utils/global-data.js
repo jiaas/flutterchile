@@ -4,10 +4,10 @@ export const getGlobalData = () => {
     : 'FLUTTERCHILE';
   const blogTitle = process.env.BLOG_TITLE
     ? decodeURI(process.env.BLOG_TITLE)
-    : 'Ningún proyecto nos queda grande.';
+    : 'FLUTTER CHILE';
   const footerText = process.env.BLOG_FOOTER_TEXT
     ? decodeURI(process.env.BLOG_FOOTER_TEXT)
-    : 'El futuro digital es hoy.';
+    : 'Ningún proyecto nos queda grande.';
 
   return {
     name,

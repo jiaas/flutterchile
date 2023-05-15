@@ -11,9 +11,10 @@ import post_1 from '../assets/post_1_img_1.png';
 import post_2 from '../assets/post_2_img_1.png';
 import post_3 from '../assets/post_3_img_1.png';
 import post_4 from '../assets/post_4_img_1.png';
+import post_5 from '../assets/post_5_img_1.png';
 import Image from 'next/image';
 
-var postImageBanner = [post_1, post_2, post_3, post_4]
+var postImageBanner = [post_1, post_2, post_3, post_4, post_5]
 
 export default function Index({ posts, globalData }) {
   return (

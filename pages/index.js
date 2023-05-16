@@ -21,7 +21,7 @@ export default function Index({ posts, globalData }) {
     <Layout>
       <SEO title={globalData.name} description={globalData.blogTitle} />
       <Header name={globalData.name} />
-      <main className="w-full">
+      <main className="w-full" >
 
         <h1 className="text-3xl lg:text-5xl text-center mb-12">
           {globalData.footerText}
@@ -47,7 +47,7 @@ export default function Index({ posts, globalData }) {
                   )}
 
                   <p>{ }</p>
-                  <Image src={postImageBanner[post.data.post_id]} width="600px" height="600px" />
+                  <Image src={postImageBanner[post.data.post_id]} width="500px" height="500px" />
                   <h2 className="text-2xl md:text-3xl">{post.data.title}</h2>
                   {post.data.description && (
                     <p className="mt-3 text-lg opacity-60">
@@ -71,7 +71,7 @@ export default function Index({ posts, globalData }) {
         variant="small"
         className="absolute bottom-0 opacity-20 dark:opacity-10"
       />
-    </Layout>
+    </Layout >
   );
 }
 

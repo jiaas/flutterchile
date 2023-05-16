@@ -3,9 +3,9 @@ exports.COLOR_THEMES = {
     colors: {
       primary: '#2CBFF8',
       'gradient-1': '#FFFFFF',
-      'gradient-2': '#AEF5FE',
+      'gradient-2': '#FFFFFF',
       'gradient-3': '#FFFFFF',
-      'gradient-4': '#AEF5FE',
+      'gradient-4': '#FFFFFF',
     },
   },
   bejamas: {

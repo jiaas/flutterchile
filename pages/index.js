@@ -29,7 +29,7 @@ export default function Index({ posts, globalData }) {
         {/*<h3 className="text-center mb-12">
           {globalData.footerText}
         </h3> */}
-        <ul className="w-full">
+        <ul className="w-full" >
           {posts.map((post) => (
             <li
               key={post.filePath}
